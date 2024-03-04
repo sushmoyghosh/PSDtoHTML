@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #1d0e15;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #026ce1;
+}
+
+body {
+  background: #1d0e15;
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+
+.header {
+  z-index: 1000;
+  padding: 3rem 1rem;
+  background: #fff;
+  
+}
+
+.header.active {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.header.active .logo {
+  color: #000;
+}
+.header .nav a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #020e28;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.header .nav a:hover {
+  color: #fdbe00;
+}
+
+.header #menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: blue;
+}
+
+.home {
+  background: url(../images/home_banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 20rem;
+}
+
+.home h3 {
+  font-size: 64px;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.yellowclr{
+  color:#f8bd05;
+}
+.blueclr{
+  color:#026ce1;
+}
+.home p {
+  font-size: 29px;
+  color: #fff;
+  font-weight: 400;
+}
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .home h3 {
+    font-size: 3rem;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .header {
+      padding: 2rem;
+  }
+  .header.active {
+      padding: 2rem;
+  }
+  .header #menu-btn {
+      display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+  }
+  .header .nav {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 1rem 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .nav.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .nav a {
+      color: #000;
+      margin: 1rem 2rem;
+  }
+  .nav_button {
+    display: none;
+  }
+  .cardthree h4::after,.cardtfour h4::after,.homeimage{
+    display: none !important;
+  }
+ 
+  
+}
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+}
+/*# sourceMappingURL=style.css.map */
+
+
+/* top bar */
+.topbar{
+  background-color: #020e28;
+  height: 40px;
+  padding: 2rem 0;
+  margin-bottom: 10px;
+  margin-top: -20px;
+
+}
+.topbarp1{
+  margin-left: -30px;
+}
+.topbar p{
+  color: #fff;
+  margin-top: -15px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  
+}
+.topbar p i{
+  color: #026ce1;
+  padding: 10px;
+ 
+}
+.topbarp{
+  text-align: end;
+  border-right: 1px solid #ddd;
+  
+}
+/* top bar */
+.logo{
+  height: 50px;
+}
+.nav_button{
+  padding: 15px;
+ margin-left: 15px;
+ margin-top: 9px;
+  height: 50px;
+  border-radius:30px ; 
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-image: linear-gradient(90deg,  #f8bd05 0%, #cbb132 31%, #1482eb 100%);
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+.nav_button i{
+  margin-right: 5px;
+}
+
+/*  */
+.homeimage1{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.homeimage2{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-left: -440px;
+}
+/* about */
+#about{
+  background-color: #FFFF;
+  padding: 20px;
+  
+}
+.cardone{
+  padding: 30px;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+}
+.cardone img{
+  
+  margin-left: 30px;
+}
+.cardone h4{
+  margin-left: -20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.cardp{
+  font-size: 16px;
+  margin-left: 30px;
+  font-weight: 500;
+}
+.anotheraboutdiv{
+  padding: 50px;
+}
+.cardtwo{
+  background-color: #026ce1;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 50px;
+  padding: 7px;
+}
+.cardtwo img{
+ margin-top: 10px;
+  width: 280px;
+  height: 280px;
+  text-align: center;
+}
+.cardthree h4{
+  font-size: 2.7rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 1rem;
+  position: relative;
+  margin-top: 20px;
+}
+
+.cardthree h4::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px; 
+    background-color: #026ce1;
+    display: block;
+
+}
+.cardthree p{
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+ 
+}
+
+/* about */
+
+.counter {
+  background: url(../images/img2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cardtfour img{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+.cardtfour h4{
+  font-size: 2.7rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 1rem;
+  position: relative;
+  margin-top: 20px;
+}
+
+.cardtfour h4::after{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px; 
+    background-color: #026ce1;
+    display: block;
+
+}
+.cardtfour p{
+  padding: 1rem 0;
+  font-size: 16px;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+ 
+}
+
+/* brand */
+#brand{
+  background-color: #fff;
+}
+.brand h4{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.brand img{
+  width: 350px;
+  margin-top: 20px;
+
+}
+
+/*  */
+
+.need {
+  background: url(../images/img5.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 40vh;
+}
+.card6{
+  background-color: #141d32;
+  padding: 20px;
+  margin:30px ;
+ 
+}
+.card6 p{
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.card6 button{
+  background-color: #026ce1;
+  color: #fff;
+  font-size: 14px;
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  
+}
+
+#footer{
+background-color: #020e28;
+}
+
+#footer .navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+#footer .navbar-brand img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.footer {
+  background: url(../images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #ccc;
+  padding: .5rem 0;
+  display: block;
+}
+.footer .box-container .box1 a {
+  
+  display: inline-block;
+}
+
+.footer .box-container .box a i {
+  padding-right: .5rem;
+  color: #f8bd05;
+}
+
+.footer .box-container .box a:hover {
+  color: #f8bd05;
+}
+
+.footer .box-container .box p {
+  font-size: 14px;
+  color: #ccc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0 1rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
+  color: #f8bd05;
+}
